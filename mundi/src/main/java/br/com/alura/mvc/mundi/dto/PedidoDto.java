@@ -3,6 +3,7 @@ package br.com.alura.mvc.mundi.dto;
 import javax.validation.constraints.NotBlank;
 
 import br.com.alura.mvc.mundi.model.Pedido;
+import br.com.alura.mvc.mundi.model.StatusPedido;
 
 public class PedidoDto {
 
@@ -55,6 +56,7 @@ public class PedidoDto {
 		pedido.setNomeProduto(nomeProduto);
 		pedido.setUrlImage(urlImage);
 		pedido.setUrlProduto(urlProduto);
+		pedido.setStatus(StatusPedido.AGUARDANDO);
 		return pedido;
 	}
 
